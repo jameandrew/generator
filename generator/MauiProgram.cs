@@ -13,6 +13,9 @@ namespace generator
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("salt.otf", "sws");
+                    fonts.AddFont("Chuyins.otf", "otw");
+                    fonts.AddFont("nigs.ttf", "sga");
                 });
 
 #if DEBUG

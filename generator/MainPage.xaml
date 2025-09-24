@@ -17,12 +17,14 @@
                 <StackLayout Spacing="12">
                     <Label x:Name="QuoteLabel"
                            Text="Tap the button to get inspired!"
+                           TextColor="Black"
                            FontSize="20"
                            HorizontalOptions="Center"
                            HorizontalTextAlignment="Center"
                            LineBreakMode="WordWrap" />
                     <Label x:Name="AuthorLabel"
                            Text=""
+                           TextColor="Black"
                            FontSize="14"
                            HorizontalOptions="Center"
                            HorizontalTextAlignment="Center" />

@@ -4,12 +4,22 @@ public partial class MainPage : ContentPage
 {
     private readonly List<(string Text, string Author)> _quotes;
     private readonly Random _random;
+    private readonly List<string> _fontFamilies;
 
     public MainPage()
     {
         InitializeComponent();
 
         _random = new Random();
+
+        // List of font families
+        _fontFamilies = new List<string>
+        {
+           
+            "otw",
+            "sws", 
+            "sga"
+        };
 
         _quotes = new List<(string, string)>
         {
@@ -40,8 +50,13 @@ public partial class MainPage : ContentPage
             return;
         }
 
+        // Get a random quote
         var q = _quotes[_random.Next(_quotes.Count)];
         QuoteLabel.Text = $"\"{q.Text}\"";
         AuthorLabel.Text = $"— {q.Author}";
+
+        // Set a random font family
+        var randomFont = _fontFamilies[_random.Next(_fontFamilies.Count)];
+        QuoteLabel.FontFamily = randomFont;
     }
 }
